@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Country</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+     <link rel="stylesheet" href="weather.css">
+     <link rel="stylesheet" href="li.css">
 </head>
-<body class="bg-white">
-    <div class="container-fluid d-lg-flex col-12 col-lg-8 shadow-lg mt-5 rounded-5 bg-body-tertiary all py-5">
-        <center class="col-12 col-lg-5">
-            <div class=" col-11 col-lg-12 shadow-lg rounded-5 px-5 py-5 bg-body-tertiary">
-                <select class="form-select ">
+<body class="">
+  <center class="mt-lg-3 mt-2">
+    <div class="container2" id="contain">
+        <div class="content">
+          <div class="content__container">
+
+            <ul class="content__container__list">
+               <center>
+            <li  class="content__container__list__item text-center  fs-3 ">CLEMENT Adebayo</li>
+               </center>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </center>
+    <div class="container-fluid d-lg-flex col-12 shadow-lg mt-2 mt-lg--5 ps-lg-5 pe-lg-5 rounded-5  all py-5">
+        <center class="col-12 col-lg-4   mx-auto ">
+            <div class=" col-11 col-lg-12 shadow-lg rounded-5 px-2 px-lg-5 py-5   containafter">
+                <select class="form-select mt-3 mt-lg-0">
                     <option class="" onmouseover="change()" id="option" selected>Search by Country name</option>
                     <option class="" onmouseover="change()" id="option" value="1">... Country capital</option>
                     <option class="" onmouseover="change()" id="option" value="2">... tele code </option>
@@ -30,32 +45,74 @@
             </div>
         </center>
     
-        <center id="scnd" class="col-12 col-lg-5 animate__zoomIn animate__animated" style="display: none;">
-            <div class="  col-11 col-lg-12 shadow-lg rounded-5 p-5 bg-body-tertiary">
-                <div class="gap-2 d-lg-flex animate__zoomIn animate__animated " id="scndsh">
+        <center id="scnd" class="col-12 col-lg-4 animate__zoomIn animate__animated mt-lg-0 mt-3 " style="display: none;">
+            <div class="  col-11 col-lg-12 shadow-lg rounded-5 py-5 px-2 containafter">
+                <div class=" d-lg-flex animate__zoomIn animate__animated " id="scndsh">
                     
                 </div>
-                
             </div>
         </center>
+        <center class="">
+            <div class="container-fluid mt-3 mt-lg-0 animate__zoomIn animate__animated " style="display: none;" id="weather" >
+                <div class="card " id="card">
+              
+                    <div class="card-heder">
+                        
+                        <h1 id="cityName" style="font-weight: 700;"></h1>
+                       
+                      </div>
+                      <span class="pb-3" id="date"></span>
+        
+                    <div class="card2 " style="display: none;" id="card2">
+                   
+                      <div class="wrapper ">
+                    
+                        <div class="color eerie-black">
+                          Humidity
+                          <span class="hex" id="Humidity">...</span>
+                        </div>
+                       
+                         <div class="color night-rider">
+                          Pressure
+                          <span class="hex" id="pressure">...</span>
+                        </div>
+                       
+                        <div class="color anti-flash-white">
+                          Speed
+                          <span class="hex" id="speed">...</span>
+                        </div>
+                        <div class="color white">
+                          deg
+                          <span class="hex" id="last" style="text-decoration: none !important;" >...</span>
+                    </div>
+                  </div>
+                </div>
+                    <span class="temp" id="temp">...</span>
+                
+                    <div class="container">
+                        <div class="cloud front">
+                          <span class="left-front"></span>
+                          <span class="right-front"></span>
+                        </div>
+                        <span class="sun sunshine"></span>
+                        <span class="sun"></span>
+                        <div class="cloud back">
+                          <span class="left-back"></span>
+                          <span class="right-back"></span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            </center>
     </div>
-    <button on></button>
-</body>
+<script type="module">
+  
+</script>
+    </body>
 <script src="script.js"></script>
+<script src="weather.js"></script>
+<script src="picture.js"></script>
 <script>
-   function change() {
-    const options = document.querySelectorAll('.form-select option');
-    options.forEach(option => {
-        option.addEventListener('mouseover', function() {
-            // Change background color of the hovered option
-            this.style.backgroundColor = 'black';
-        });
-        option.addEventListener('mouseout', function() {
-            // Reset background color when mouse leaves the option
-            this.style.backgroundColor = '';
-        });
-    });
-}
 
 
     

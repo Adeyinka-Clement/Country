@@ -1,0 +1,327 @@
+.card {
+    width: 380px;
+    height: 395px !important;
+    position: relative;
+    padding: 25px;
+    box-shadow: 10px 15px 32px rgba(3, 28, 170, 0.267), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+    border: none !important;
+    background-color: rgba(255, 255, 255, 0.438);
+  }
+  body{
+    width: 100% !important;
+    height: 100vh !important;
+  }
+  @media screen and (max-width: 475px ) {
+    .card{
+      width: 100% !important;
+    }
+	.card2{
+		margin-right: -10px !important;
+  }
+  .container{
+        transform: scale(0.5) !important;
+        margin-left: 80px;
+  }
+  }
+  
+  .card:hover {
+    /* transform: scale(1.01); */
+  }
+  
+  .container {
+    width: 250px;
+    height: 250px;
+    transform: scale(0.7);
+    display: flex !important;
+    justify-content: center;
+    margin-right: -20% !important;
+  }
+  
+  .cloud {
+    width: 250px;
+  }
+  
+  .front {
+    padding-top: 45px;
+    margin-left: 25px;
+    display: inline;
+    position: absolute;
+    z-index: 11;
+    animation: clouds 8s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .back {
+    margin-top: -30px;
+    margin-left: 150px;
+    z-index: 12;
+    animation: clouds 12s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .right-front {
+    width: 45px;
+    height: 45px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -25px;
+    z-index: 5;
+  }
+  
+  .left-front {
+    width: 65px;
+    height: 65px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+  }
+
+  .right-back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -20px;
+    z-index: 5;
+  }
+  
+  .left-back {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+  }
+  
+  .sun {
+    width: 120px;
+    height: 120px;
+    background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+    background: linear-gradient(to right, #fcbb04, #fffc00);
+    border-radius: 60px;
+    display: inline;
+    position: absolute;
+  }
+  
+  .sunshine {
+    animation: sunshines 2s infinite;
+  }
+  
+  @keyframes sunshines {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+  
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes clouds {
+    0% {
+      transform: translateX(15px);
+    }
+  
+    50% {
+      transform: translateX(0px);
+    }
+  
+    100% {
+      transform: translateX(15px);
+    }
+  }
+  
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card-header span:first-child {
+    word-break: break-all;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(87, 77, 51, 0.66);
+  }
+  
+  .card-header span:last-child {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(87, 77, 51, 0.33);
+  }
+  
+  .temp {
+    position: absolute;
+    left: 25px;
+    bottom: 12px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: rgba(87, 77, 51, 1);
+  }
+  
+  .temp-scale {
+    width: 80px;
+    height: 36px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 9px;
+  }
+  
+  .temp-scale span {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 134.49%;
+    color: rgba(87, 77, 51, 0.66);
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .card2 {
+    width: 240px;
+    height: 190px;
+    box-shadow: 2px 2px 2px 2px #1b1b1b3d !important;
+    font-family: Helvetica, sans-serif;
+    margin-right: -180px ;
+    border-radius: 20px;
+  }
+  
+  .wrapper {
+    width: 250px;
+    font-size: small;
+  }
+  
+  .title {
+    text-align: center;
+    color: #1b1b1b;
+  }
+  
+  .heading {
+    font-weight: bold;
+    letter-spacing: 7px;
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 6px;
+  }
+  
+  .heading::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background: #e8e8e8; */
+    z-index: -1;
+    filter: blur(50px);
+    height: 50px;
+  }
+  
+  .color {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .hex {
+    font-size: 12px;
+    text-align: end;
+    font-family: monospace;
+    text-transform: uppercase;
+  }
+  
+  .black {
+    background: var(--black);
+    color: var(--ch-white);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .eerie-black {
+    background: var(--ch-black);
+    color: var(--ch-white);
+  }
+  
+  .chinese-black {
+    background: var(--eer-black);
+    color: var(--ch-white);
+  }
+  
+  .night-rider {
+    background: var(--night-rider);
+    color: var(--ch-white);
+  }
+  
+  .chinese-white {
+    background: var(--ch-white);
+    color: var(--night-rider);
+  }
+  
+  .anti-flash-white {
+    background: var(--af-white);
+    color: var(--night-rider);
+  }
+  
+  .white {
+    background: var(--white);
+    color: var(--night-rider);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .border {
+    color: var(--night-rider);
+    padding: 10px 10px;
+    text-align: center;
+  }
+  
+  .border span {
+    border-radius: 5px;
+    color: var(--ch-white);
+    padding: 2px 4px;
+    background-color: var(--night-rider);
+  }
+  #date{
+    color: rgba(0, 0, 0, 0.582);
+  }
+  .inp{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.199);
+    border-radius: 20px;
+    background-color: white !important;
+    width: 250px ;
+  }
+  input:focus{
+    /* border: 5px solid white !important; */
+    box-shadow: none !important;
+    text-decoration: none;
+    border: 0px solid white;
+    box-shadow: transparent !important;
+  }
+ 
